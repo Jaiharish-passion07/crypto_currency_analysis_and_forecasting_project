@@ -54,11 +54,11 @@ For additional investigation, we use altcoins such as
  - [AWS Custom VPC Creation Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.VPCAndSubnets)
 
 
-## Deployment
+## Architecture Diagram
 
-To deploy this project run
+#### AWS Cloud Architecture Diagram with DataExtract Server and RDS Instance
 
-```bash
-  npm run deploy
-```
+![Cloud ARchit]()
 
+#### General Architecture Diagram of Model Building and Data Analysis
+![data]()
