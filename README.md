@@ -32,11 +32,10 @@ For additional investigation, we use altcoins such as
 
 #### AWS Cloud Architecture Diagram with DataExtract Server and RDS Instance
 
-![Aws_crypto_analysis_archit](https://user-images.githubusercontent.com/78978975/182557890-a8d8ba6f-41f7-4591-8688-a224ffeffe8a.jpg)
+![Cloud ARchit]()
 
 #### General Architecture Diagram of Model Building and Data Analysis
-
-![General_Diagram](https://user-images.githubusercontent.com/78978975/182557949-06c4b41e-46bf-49d9-be72-00163280cba2.jpg)
+![data]()
 
 ## Roadmap
 
@@ -92,7 +91,8 @@ Dependecies Library and other packages required to run this porject
 
 ```bash
 chmod 400 key_file
-
+```
+```bash
 ls -l
 ```
 *Output: -r-------- 1 jairam07 jairam07     1674 Aug  3 20:56 demo_key.pem* 
@@ -112,9 +112,11 @@ sudo apt update && sudo apt upgrade
 ### Installing google chrome and Webdriver for respective version
 ```bash
 sudo apt install wget
-
+```
+```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
+```
+```bash
 ls -l
 ```
 *Output: -rw-rw-r-- 1 ubuntu ubuntu 89563160 Jul 30 12:56 google-chrome-stable_current_amd64.deb*
@@ -127,6 +129,8 @@ google-chrome --version
 ### Create one directiory to store webdriver file
 ```bash
 mkdir chrome_driver_selenium
+```
+```bash
 cd chrome_driver_selenium/
 ```
 [**Download Webdriver for Chrome Browser**](https://chromedriver.chromium.org/downloads)
@@ -138,7 +142,11 @@ wget https://chromedriver.storage.googleapis.com/104.0.5112.79/chromedriver_linu
 ### Unzip that webdriver file
 ```bash
 sudo apt install unzip
+```
+```bash
 unzip chromedriver_linux64.zip
+```
+```bash
 ls -l
 ```
 *Output: -rwxr-xr-x 1 ubuntu ubuntu 13978368 Jul 30 12:47 chromedriver*
@@ -173,6 +181,28 @@ source my_env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+**Running Crypto_Scripting python file**
+```bash
+python crypto_scripting.py
+```
+Output:
+```bash
+The Table top_100_coins is created successfully into Crpyto Database
+The Data is written successfully into the Table top_100_coins ..
+The Table historical_bitcoin_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_bitcoin_data ..
+The Table historical_ethereum_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_ethereum_data ..
+The Table historical_bnb_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_bnb_data ..
+The Table historical_xrp_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_xrp_data ..
+The Table historical_cardano_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_cardano_data ..
+The Table historical_solana_data is created successfully into Crpyto Database
+The Data is written successfully into the Table historical_solana_data ..
+```
+
 
 
     
