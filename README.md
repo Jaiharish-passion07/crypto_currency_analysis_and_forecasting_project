@@ -58,7 +58,8 @@ For additional investigation, we use altcoins such as
 
 #### AWS Cloud Architecture Diagram with DataExtract Server and RDS Instance
 
-![Cloud ARchit]()
+![Aws_crypto_analysis_archit](https://user-images.githubusercontent.com/78978975/182554832-a6114b38-8dcc-41f6-be89-f7a015e1649c.jpg)
+
 
 #### General Architecture Diagram of Model Building and Data Analysis
-![data]()
+![General_Diagram](https://user-images.githubusercontent.com/78978975/182554943-0ce084d1-72cb-426d-b5ff-e2c8267f1380.jpg)
