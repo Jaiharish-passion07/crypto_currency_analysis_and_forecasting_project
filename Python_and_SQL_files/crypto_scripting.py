@@ -71,8 +71,6 @@ class Crypto_Data_extract:
 
                 self.driver.execute_script("arguments[0].scrollIntoView();", self.flag)
 
-                # print(coin_name.text.replace("\n", "").strip(), coin_symbol.text.replace("\n", "").strip(),
-                #       volume_24hr.text)
 
                 #Appending data into list of tuples
                 self.top_100_coin_list.append((coin_name.text.replace("\n", "").strip(),
@@ -101,6 +99,7 @@ class Crypto_Data_extract:
             no_of_month = diff
             delta = end.date() - start.date()
             no_of_days = int(delta.days)
+            
             #Assign a empty list
             self.history_data_list = []
 
@@ -140,8 +139,7 @@ class Crypto_Data_extract:
                 mak_cap = self.driver.find_element(by=By.XPATH,
                                                value="//*[@id='__next']/div[1]/div[1]/div[2]/div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[" + str(
                                                   i) + "]/td[7]")
-                print(price_date.text.strip(), open_price.text.strip(), close_price.text.strip())
-
+                
                 #Appending data into list of tuples
                 self.history_data_list.append((price_date.text.strip(),
                                           open_price.text.strip(),
@@ -169,7 +167,7 @@ if __name__ =="__main__":
     current_date = date.today()
     yesterday = current_date - timedelta(days=1)
     yesterday_ = str(datetime.strftime(yesterday, "%d/%m/%Y"))
-    select_coins=['bitcoin','ethereum','bnb','solana','polkadot-new','cardano']
+    select_coins=['bitcoin','ethereum','bnb','xrp','cardano','solana']
 
     #Top_coins
     top_100_coins=Crypto_Data_extract()
@@ -179,7 +177,7 @@ if __name__ =="__main__":
     for coin in select_coins:
         table_name = "historical_" + coin + "_data"
         new_user=check_table_exist(table_name)
-        print(new_user)
+
         if not new_user:
             #Create table into DB
             create_table(table_name)
