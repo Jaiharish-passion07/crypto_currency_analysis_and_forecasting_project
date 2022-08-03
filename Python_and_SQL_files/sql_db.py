@@ -7,11 +7,11 @@ def create_table(table_name):
         conn = None
 
         with psycopg2.connect(
-                database="crypto_db",
-                user='postgres',
-                password='Rit#2017',
-                host='crypto-db-instance.cfafhiaqsztg.ap-south-1.rds.amazonaws.com',
-                port='5432') as conn:
+                database='db_name_####',
+                user='user_name_####',
+                password='pswd_####,
+                host='host_addrss_####',
+                port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
                 # call a stored procedure
                 cur.execute('''CALL pr_create_tables(%s)''',(table_name,))
@@ -30,11 +30,11 @@ def insert_table(table_name,insert_values):
         conn = None
 
         with psycopg2.connect(
-                database="crypto_db",
-                user='postgres',
-                password='Rit#2017',
-                host='crypto-db-instance.cfafhiaqsztg.ap-south-1.rds.amazonaws.com',
-                port='5432') as conn:
+                database='db_name_####',
+                user='user_name_####',
+                password='pswd_####,
+                host='host_addrss_####',
+                port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
                 if table_name == "top_100_coins":
                     # Insert elements into DB
@@ -60,11 +60,11 @@ def check_table_exist(table_name):
         # """ insert multiple vendors into the vendors table  """
         conn = None
         with psycopg2.connect(
-                database="crypto_db",
-                user='postgres',
-                password='Rit#2017',
-                host='crypto-db-instance.cfafhiaqsztg.ap-south-1.rds.amazonaws.com',
-                port='5432') as conn:
+                database='db_name_####',
+                user='user_name_####',
+                password='pswd_####,
+                host='host_addrss_####',
+                port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
                 cur.execute("select exists(select * from information_schema.tables where table_name=%s)", (table_name,))
                 result=cur.fetchone()[0]
