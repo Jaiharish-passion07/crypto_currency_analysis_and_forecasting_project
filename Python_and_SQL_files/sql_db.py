@@ -9,7 +9,7 @@ def create_table(table_name):
         with psycopg2.connect(
                 database='db_name_####',
                 user='user_name_####',
-                password='pswd_####,
+                password='pswd_####',
                 host='host_addrss_####',
                 port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
@@ -32,7 +32,7 @@ def insert_table(table_name,insert_values):
         with psycopg2.connect(
                 database='db_name_####',
                 user='user_name_####',
-                password='pswd_####,
+                password='pswd_####',
                 host='host_addrss_####',
                 port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
@@ -62,7 +62,7 @@ def check_table_exist(table_name):
         with psycopg2.connect(
                 database='db_name_####',
                 user='user_name_####',
-                password='pswd_####,
+                password='pswd_####',
                 host='host_addrss_####',
                 port='####') as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
