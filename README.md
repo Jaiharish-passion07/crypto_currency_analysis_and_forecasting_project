@@ -28,6 +28,15 @@ For additional investigation, we use altcoins such as
 - Solana
 
 
+## Architecture Diagram
+
+#### AWS Cloud Architecture Diagram with DataExtract Server and RDS Instance
+
+![Cloud ARchit]()
+
+#### General Architecture Diagram of Model Building and Data Analysis
+![data]()
+
 ## Roadmap
 
 * [x] Alpha Stage
@@ -46,6 +55,30 @@ For additional investigation, we use altcoins such as
 
 
 
+## Tech Skills
+
+**Programming Languages:**
+
+* Python
+
+* SQL
+
+**WebScraping:** 
+
+* Selenium
+
+**AWS Cloud:** 
+
+* Elastic Compute Cloud
+* Relational Database Service Instance
+* Virtual Private Cloud
+* Basic Networking and Security skills
+
+**Other Skills:** 
+
+* Linux Cmds
+
+
 ## Acknowledgements
 
  - [Selenium Documentation](https://selenium-python.readthedocs.io/)
@@ -53,13 +86,4 @@ For additional investigation, we use altcoins such as
  - [Create DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateDBInstance.html)
  - [AWS Custom VPC Creation Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.VPCAndSubnets)
 
-
-## Architecture Diagram
-
-#### AWS Cloud Architecture Diagram with DataExtract Server and RDS Instance
-
-![Aws_crypto_analysis_archit](https://user-images.githubusercontent.com/78978975/182554832-a6114b38-8dcc-41f6-be89-f7a015e1649c.jpg)
-
-
-#### General Architecture Diagram of Model Building and Data Analysis
-![General_Diagram](https://user-images.githubusercontent.com/78978975/182554943-0ce084d1-72cb-426d-b5ff-e2c8267f1380.jpg)
+**Will be Update soon with other Necessary Information**
