@@ -23,8 +23,7 @@ class Crypto_Data_extract:
         self.options.add_argument('--no-sandbox')
 
     def initialize_webdriver(self):
-        # path = Service("/home/ubuntu/selenium_driver/chromedriver")
-        self.path = Service("/home/ubuntu/selenium_webdriver/chromedriver")
+        self.path = Service("web_driver_path")
         self.driver = webdriver.Chrome(service=self.path, options=self.options)
         # For maximizing window
         self.driver.maximize_window()
@@ -36,7 +35,7 @@ class Crypto_Data_extract:
             self.initialize_webdriver()
             self.driver.get("https:/coinmarketcap.com/")
             self.top_100_coin_list = []
-            for i in range(1, 15):
+            for i in range(1, 101):
 
                 #Main Script
                 # Giving Elements path id to extract data
