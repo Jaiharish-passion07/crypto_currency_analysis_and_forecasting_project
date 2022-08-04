@@ -7,6 +7,8 @@ Solana every day. Cryptocurrency is a brand-new generation of digital money that
 offers decentralized finance free from the control of the banking system. It has 
 a consensus algorithm and uses blockchain technology as its backing. The market for cryptocurrencies worldwide is $1.07 trillion.
 
+![crypto_cover](https://user-images.githubusercontent.com/78978975/182887617-dbb04208-7bfc-4fcf-b042-5be544a105b9.jpeg)
+
 
 ## Goal of the Project
 
