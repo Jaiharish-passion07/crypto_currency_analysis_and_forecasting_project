@@ -53,7 +53,7 @@ For additional investigation, we use altcoins such as
 * [ ] Gamma Stage
     * Building an Forecasting Model
 
-
+![stage_update](https://user-images.githubusercontent.com/78978975/182777600-4477a30b-9e93-4a37-9db0-1cf183cbd1d2.jpg)
 
 
 ## Tech Skills
